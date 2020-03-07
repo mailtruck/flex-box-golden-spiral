@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+      }
+      .big {
+        width: 21em;
+        height: 21em;
+        display: flex;
+        background: red;
+      }
+      .mid {
+        width: 13em;
+        height: 13em;
+        display: flex;
+        background: orange;
+      }
+      .small {
+        width: 8em;
+        height: 8em;
+        display: flex;
+        background: yellow;
+      }
+      .subcontainer {
+        flex-direction: column;
+        display: flex;
+      }
+      .subsub {
+        flex-direction: row-reverse;
+        display: flex;
+      }
+      .tiny {
+        background: green;
+        width: 5em;
+        height: 5em;
+        display: flex;
+      }
+      .bitty {
+        background: cyan;
+        width: 3em;
+        height: 3em;
+        display: flex;
+      }
+      .subsubsub {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="big">big</div>
+      <div class="subcontainer">
+        <div class="mid">mid</div>
+        <div class="subsub">
+          <div class="small">small</div>
+          <div class="subsubsub">
+            <div class="tiny">tiny</div>
+            <div class="bitty">bitty</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
